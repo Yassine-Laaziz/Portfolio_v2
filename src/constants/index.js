@@ -24,6 +24,10 @@ import {
   nextAuth,
   alexy,
   IP_Tracker,
+  tangierHorizons,
+  nodemailer,
+  portfolio,
+  vite,
 } from '../assets'
 
 export const navLinks = [
@@ -144,6 +148,7 @@ const projects = [
       { img: typescript, alt: 'Typescript' },
       { img: sanity, alt: 'Sanity' },
       { img: nodejs, alt: 'Node.js' },
+      { img: nodemailer, alt: 'Nodemailer' },
       { img: shopify, alt: 'Shopify' },
       { img: tailwind, alt: 'Tailwind.css' },
       { img: headlessUI, alt: 'HeadlessUI' },
@@ -237,17 +242,77 @@ const projects = [
     uses another api to get the ip first.`,
     image: IP_Tracker,
     source_code_link: 'https://github.com/Yassine-Laaziz/IP-Tracker',
+    stack: [{ img: reactjs, alt: 'React.js' }],
+  },
+  {
+    name: 'Tangier Horizons',
+    description: `An IP Tracker Built using simple rest api's, user enters IP, website uses api to fetch the ip json,
+    display it properly and assign it's latitude and longitude to an api map, if user enters a blank ip the website
+    uses another api to get the ip first.`,
+    image: tangierHorizons,
+    source_code_link: 'https://github.com/Yassine-Laaziz/IP-Tracker',
+    stack: [
+      { img: reactjs, alt: 'React.js' },
+      { img: next, alt: 'Next.js' },
+      { img: sanity, alt: 'Sanity' },
+    ],
+  },
+  {
+    name: 'Arganaya',
+    description: `This is a landing page project, that delivers a captivating user interface and experience, 
+  The sleek design and animation is crafted using Tailwind CSS and Framer-Motion.`,
+    image: alexy,
+    source_code_link: 'https://github.com/Yassine-Laaziz/Arganaya',
     tags: [
       {
-        name: 'UI/UX',
+        name: 'Api Routes',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'CMS',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'Serverless (partially)',
         color: 'blue-text-gradient',
       },
     ],
     stack: [
-      { img: next, alt: 'Next.js' },
+      { img: mongodb, alt: 'MongoDB' },
       { img: reactjs, alt: 'React.js' },
-      { img: tailwind, alt: 'Tailwind.css' },
+      { img: next, alt: 'Next.js' },
+      { img: sanity, alt: 'Sanity' },
+      { img: nodejs, alt: 'Node.js' },
+      { img: nodemailer, alt: 'Nodemailer' },
+    ],
+  },
+  {
+    name: 'Portfolio',
+    description: `This is a landing page project, that delivers a captivating user interface and experience, 
+  The sleek design and animation is crafted using Tailwind CSS and Framer-Motion.`,
+    image: portfolio,
+    source_code_link: 'https://github.com/Yassine-Laaziz/Arganaya',
+    tags: [
+      {
+        name: 'Api Routes',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'CMS',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'Serverless (partially)',
+        color: 'blue-text-gradient',
+      },
+    ],
+    stack: [
+      { img: reactjs, alt: 'React.js' },
+      { img: next, alt: 'Next.js' },
+      { img: threejsWhite, alt: 'Three.js' },
+      { img: nodemailer, alt: 'Nodemailer' },
       { img: framerMotion, alt: 'Framer-Motion' },
+      { img: vite, alt: 'Vite' },
     ],
   },
 ]
