@@ -122,8 +122,8 @@ const experiences = [
 const projects = [
   {
     name: 'Xphoria',
-    description: `This is an E-commerce website that's built using Next.js,
-       it's authentication system is a passwordless email-only authentication, the checkout gateway is shopify api.`,
+    description: `With a passworless email-only JWT authentication system, Xphoria is ensuring an easier and safer option steering away from vurnabilities associated with
+    user credentials. The project features a unique and captivating UX/UI and product customization guarantiying user satisfaction, the checkout gateway is implemented using the Shopify package.`,
     image: xphoria,
     source_code_link: 'https://github.com/Yassine-Laaziz/Xphoria',
     remaining: 20,
@@ -157,8 +157,8 @@ const projects = [
   },
   {
     name: 'Alexy',
-    description: `This is a landing page project, that delivers a captivating user interface and experience, 
-    The sleek design and animation is crafted using Tailwind CSS and Framer-Motion.`,
+    description: `Alexy is an e-commerce website that offers a variety of session authentication gateways using NextAuth.js. It allows users to choose the authentication option that suits them best. 
+    Additionally, the project includes features such as notifying professionals via nodemailer for Google Meet sessions and a professional UX/UI newsletter subscription for beauty and health tips.`,
     image: alexy,
     source_code_link: 'https://github.com/Yassine-Laaziz/Alexy',
     remaining: 50,
@@ -184,6 +184,7 @@ const projects = [
       { img: typescript, alt: 'Typescript' },
       { img: sanity, alt: 'Sanity' },
       { img: nodejs, alt: 'Node.js' },
+      { img: nodemailer, alt: 'Nodemailer' },
       { img: tailwind, alt: 'Tailwind.css' },
       { img: headlessUI, alt: 'HeadlessUI' },
       { img: framerMotion, alt: 'Framer-Motion' },
@@ -236,31 +237,9 @@ const projects = [
     ],
   },
   {
-    name: 'IP Tracker',
-    description: `An IP Tracker Built using simple rest api's, user enters IP, website uses api to fetch the ip json,
-    display it properly and assign it's latitude and longitude to an api map, if user enters a blank ip the website
-    uses another api to get the ip first.`,
-    image: IP_Tracker,
-    source_code_link: 'https://github.com/Yassine-Laaziz/IP-Tracker',
-    stack: [{ img: reactjs, alt: 'React.js' }],
-  },
-  {
-    name: 'Tangier Horizons',
-    description: `An IP Tracker Built using simple rest api's, user enters IP, website uses api to fetch the ip json,
-    display it properly and assign it's latitude and longitude to an api map, if user enters a blank ip the website
-    uses another api to get the ip first.`,
-    image: tangierHorizons,
-    source_code_link: 'https://github.com/Yassine-Laaziz/IP-Tracker',
-    stack: [
-      { img: reactjs, alt: 'React.js' },
-      { img: next, alt: 'Next.js' },
-      { img: sanity, alt: 'Sanity' },
-    ],
-  },
-  {
     name: 'Arganaya',
-    description: `This is a landing page project, that delivers a captivating user interface and experience, 
-  The sleek design and animation is crafted using Tailwind CSS and Framer-Motion.`,
+    description: `Arganaya focuses on ensuring user satisfaction through food customization for better health and taste preferences.
+    The project includes user authentication through JWT, with nodemailer used for email verification and receiving food orders.`,
     image: alexy,
     source_code_link: 'https://github.com/Yassine-Laaziz/Arganaya',
     tags: [
@@ -288,8 +267,9 @@ const projects = [
   },
   {
     name: 'Portfolio',
-    description: `This is a landing page project, that delivers a captivating user interface and experience, 
-  The sleek design and animation is crafted using Tailwind CSS and Framer-Motion.`,
+    description: `This is my own portfolio project that ensures a captivating 3D user interface and experience using Three.js,
+    showcasing some of my contracts, projects and achievements using a wonderful interface. Also uses a simple 'formSpree' 
+    form-action url to send an email to me and 'formspree' and google recaptcha for spam prevention`,
     image: portfolio,
     source_code_link: 'https://github.com/Yassine-Laaziz/Arganaya',
     tags: [
@@ -310,9 +290,29 @@ const projects = [
       { img: reactjs, alt: 'React.js' },
       { img: next, alt: 'Next.js' },
       { img: threejsWhite, alt: 'Three.js' },
-      { img: nodemailer, alt: 'Nodemailer' },
       { img: framerMotion, alt: 'Framer-Motion' },
       { img: vite, alt: 'Vite' },
+    ],
+  },
+  {
+    name: 'IP Tracker',
+    description: `An IP Tracker Built using simple rest api's, user enters IP, website uses api to fetch the ip json,
+    display it properly and assign it's latitude and longitude to an api map, if user enters a blank ip the website
+    uses another api to get the ip first.`,
+    image: IP_Tracker,
+    source_code_link: 'https://github.com/Yassine-Laaziz/IP-Tracker',
+    stack: [{ img: reactjs, alt: 'React.js' }],
+  },
+  {
+    name: 'Tangier Horizons',
+    description: `Tangier Horizons is like a portfolio for an association, this project is simple yet provides a good UX/UI showcasing 
+    the achievements, gallery and personalities of the association`,
+    image: tangierHorizons,
+    source_code_link: 'https://github.com/Yassine-Laaziz/IP-Tracker',
+    stack: [
+      { img: reactjs, alt: 'React.js' },
+      { img: next, alt: 'Next.js' },
+      { img: sanity, alt: 'Sanity' },
     ],
   },
 ]
