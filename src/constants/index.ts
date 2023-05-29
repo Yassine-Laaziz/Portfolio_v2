@@ -29,8 +29,9 @@ import {
   portfolio,
   vite,
 } from '../assets'
+import { experience, project } from '../../types'
 
-export const navLinks = [
+export const navLinks: { id: string; title: string }[] = [
   {
     id: 'about',
     title: 'About',
@@ -44,8 +45,7 @@ export const navLinks = [
     title: 'Contact',
   },
 ]
-
-const services = [
+const services: { title: string; icon: string }[] = [
   {
     title: 'Fullstack Web Developer',
     icon: web,
@@ -56,7 +56,7 @@ const services = [
   },
 ]
 
-const technologies = [
+const technologies: { name: string; icon: string }[] = [
   {
     name: 'HTML 5',
     icon: html,
@@ -103,7 +103,7 @@ const technologies = [
   },
 ]
 
-const experiences = [
+const experiences: experience[] = [
   {
     title: 'React.js Developer',
     company_name: 'Starbucks',
@@ -119,7 +119,7 @@ const experiences = [
   },
 ]
 
-const projects = [
+const projects: project[] = [
   {
     name: 'Xphoria',
     description: `With a passworless email-only JWT authentication system, Xphoria is ensuring an easier and safer option steering away from vurnabilities associated with
