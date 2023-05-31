@@ -2,8 +2,8 @@ export interface project {
   name: string
   description: string
   image: string
+  website_link: string
   source_code_link?: string
-  remaining?: number
   tags?: { name: string; color: string }[]
   stack?: { img: string; alt: string }[]
 }
@@ -15,4 +15,11 @@ export interface experience {
   iconBg: string
   date: string
   points: string[]
+}
+
+export interface achievementT {
+  age: number
+  achievement: string
+  description: string
+  keyPoints: string[]
 }

@@ -7,8 +7,10 @@ import {
   Hero,
   Navbar,
   Tech,
-  Works,
+  Contracts,
+  Projects,
   StarsCanvas,
+  Achievements,
 } from './components'
 
 const App = () => {
@@ -22,7 +24,9 @@ const App = () => {
         <About />
         <Experience />
         <Tech />
-        <Works />
+        <Contracts />
+        <Projects />
+        <Achievements />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />

@@ -5,11 +5,7 @@ import github from './github.png'
 import menu from './menu.svg'
 import close from './close.svg'
 
-import css from './tech/css.png'
 import figma from './tech/figma.png'
-import git from './tech/git.png'
-import html from './tech/html.png'
-import javascript from './tech/javascript.png'
 import mongodb from './tech/mongodb.png'
 import nodejs from './tech/nodejs.png'
 import reactjs from './tech/reactjs.png'
@@ -25,6 +21,7 @@ import headlessUI from './tech/headlessUI.png'
 import threejsWhite from './tech/threejsWhite.png'
 import shopify from './tech/shopify.png'
 import vite from './tech/vite.png'
+import nextBlack from './tech/nextBlack.png'
 
 import xphoria from './herobanner/xphoria.png'
 import experiment3D from './herobanner/3D_Experiment.png'
@@ -33,6 +30,7 @@ import alexy from './herobanner/alexy.png'
 import IP_Tracker from './herobanner/ip-tracker.png'
 import tangierHorizons from './herobanner/tangierHorizons.png'
 import portfolio from './herobanner/portfolio.png'
+import arganaya from './herobanner/arganaya.png'
 
 export {
   backend,
@@ -41,11 +39,7 @@ export {
   github,
   menu,
   close,
-  css,
   figma,
-  git,
-  html,
-  javascript,
   mongodb,
   nodejs,
   reactjs,
@@ -68,4 +62,6 @@ export {
   IP_Tracker,
   tangierHorizons,
   portfolio,
+  arganaya,
+  nextBlack,
 }
