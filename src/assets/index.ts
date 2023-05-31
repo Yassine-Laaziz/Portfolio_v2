@@ -28,7 +28,7 @@ import experiment3D from './herobanner/3D_Experiment.png'
 import metaverse from './herobanner/metaverse.png'
 import alexy from './herobanner/alexy.png'
 import IP_Tracker from './herobanner/ip-tracker.png'
-import tangierHorizons from './herobanner/tangierHorizons.png'
+import tangierHorizons from './herobanner/TangierHorizons.png'
 import portfolio from './herobanner/portfolio.png'
 import arganaya from './herobanner/arganaya.png'
 
