@@ -30,7 +30,7 @@ import alexy from './herobanner/alexy.png'
 import IP_Tracker from './herobanner/ip-tracker.png'
 import tangierHorizons from './herobanner/TangierHorizons.png'
 import portfolio from './herobanner/portfolio.png'
-import arganaya from './herobanner/arganaya.png'
+import arganaya from './herobanner/Arganaya.png'
 
 export {
   backend,
