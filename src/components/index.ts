@@ -1,4 +1,4 @@
-import { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas'
+import { EarthCanvas, ComputersCanvas, StarsCanvas } from './canvas'
 import Hero from './Hero'
 import Navbar from './Navbar'
 import About from './About'
@@ -9,6 +9,7 @@ import CanvasLoader from './Loader'
 import Projects from './Projects'
 import Contracts from './Contracts'
 import Achievements from './Achievements'
+import SoftSkills from './SoftSkills'
 
 export {
   Hero,
@@ -21,8 +22,8 @@ export {
   Contact,
   CanvasLoader,
   EarthCanvas,
-  BallCanvas,
   ComputersCanvas,
   StarsCanvas,
+  SoftSkills,
   Achievements,
 }

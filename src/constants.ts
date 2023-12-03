@@ -9,7 +9,6 @@ import {
   figma,
   shopify,
   threejs,
-  threejsWhite,
   xphoria,
   sanity,
   framerMotion,
@@ -25,22 +24,46 @@ import {
   portfolio,
   vite,
   arganaya,
-  nextBlack,
-} from '../assets'
-import { achievementT, experience, project } from '../../types'
+  Icon3D,
+  CyberSecurity,
+  prisma,
+  redux,
+  stripe,
+} from './assets'
+import { achievementT, experienceT, projectT, softSkillsT } from '../types'
 
 export const navLinks: { id: string; title: string }[] = [
   {
-    id: 'about',
     title: 'About',
+    id: 'about',
   },
   {
-    id: 'work',
     title: 'Work',
+    id: 'work',
   },
   {
-    id: 'contact',
+    title: 'Tech',
+    id: 'tech',
+  },
+  {
+    title: 'Contracts',
+    id: 'contracts',
+  },
+  {
+    title: 'Projects',
+    id: 'projects',
+  },
+  {
+    title: 'Soft skills',
+    id: 'soft skills',
+  },
+  {
+    title: 'Achievements',
+    id: 'achievements',
+  },
+  {
     title: 'Contact',
+    id: 'contact',
   },
 ]
 export const services: { title: string; icon: string }[] = [
@@ -56,21 +79,39 @@ export const services: { title: string; icon: string }[] = [
 
 export const technologies: { name: string; icon: string }[] = [
   { name: 'TypeScript', icon: typescript },
-  { name: 'React JS', icon: reactjs },
-  { name: 'Tailwind CSS', icon: tailwind },
-  { name: 'Node JS', icon: nodejs },
-  { name: 'MongoDB', icon: mongodb },
+  { name: 'Shopify', icon: shopify },
+  { name: 'prisma', icon: prisma },
+  { name: 'Nodemailer', icon: nodemailer },
+  { name: 'vite', icon: vite },
+  { name: 'redux', icon: redux },
+  { name: 'next Js', icon: next },
   { name: 'Three JS', icon: threejs },
-  { name: 'next Js', icon: nextBlack },
-  { name: 'NextAuth', icon: nextAuth },
+  { name: 'Headless UI', icon: headlessUI },
   { name: 'Framer-motion', icon: framerMotion },
   { name: 'Sanity CMS', icon: sanity },
-  { name: 'Headless UI', icon: headlessUI },
-  { name: 'vite', icon: vite },
+  { name: 'stripe', icon: stripe },
   { name: 'figma', icon: figma },
+  { name: 'React JS', icon: reactjs },
+  { name: 'NextAuth', icon: nextAuth },
+  { name: 'MongoDB', icon: mongodb },
+  { name: 'Tailwind CSS', icon: tailwind },
+  { name: 'Node JS', icon: nodejs },
 ]
 
-export const experiences: experience[] = [
+export const experiences: experienceT[] = [
+  {
+    title: 'Nextjs Web Developer (fullstack)',
+    company_name: 'Alexy',
+    icon: alexy,
+    iconBg: '#383E56',
+    date: 'Jul 2023 - Dec 2023',
+    points: [
+      'Developed an Advanced, Cutting-edge, Modern, Ultra-fast and Secure e-commerce Website',
+      'Implemented a captivating 3D UI/UX that is controllable by the end user',
+      'implemented sessions for Quick Google Authentication through Next-Auth',
+      'Implemented a Checkout Gateway using Stripe, and Stripe Webhooks',
+    ],
+  },
   {
     title: 'Nextjs Web Developer (fullstack)',
     company_name: 'Xphoria',
@@ -79,20 +120,8 @@ export const experiences: experience[] = [
     date: 'Jun 2023 - Present',
     points: [
       'Developed a passwordless email-only JWT authentication system for enhanced security and ease of use.',
-      'Designed a captivating and user-friendly UX/UI with customizable product options.',
+      'Designed a captivating and user-friendly UI/UX with customizable product options.',
       'Implemented a checkout gateway using the Shopify package.',
-    ],
-  },
-  {
-    title: 'Nextjs Web Developer (fullstack)',
-    company_name: 'Alexy',
-    icon: alexy,
-    iconBg: '#383E56',
-    date: 'Jan 2023 - May 2023',
-    points: [
-      'Developed an e-commerce website with multiple session authentication gateways using NextAuth.js.',
-      'Implemented nodemailer for notifying professionals about Google Meet sessions.',
-      'Created a professional UX/UI newsletter subscription for beauty and health tips.',
     ],
   },
   {
@@ -103,8 +132,8 @@ export const experiences: experience[] = [
     date: 'Jun 2022 - Dec 2022 · 7 mos',
     points: [
       'Created a responsive, High-Quality Company Website according to design.',
-      'Implemented signup/login functionalities, an email verification system, and a checkout system (was going to implement a checkout system using “stripe” but the company preferred a “pay as you receive” way).',
-      'Implemented middleware and protected routes using “Jose” (a package like "jsonwebtoken") for authorization/authentication.',
+      'Implemented signup/login functionalities, an email verification system, and a checkout system (company preferred a “pay as you receive” gateway).',
+      'Implemented middleware and protected routes using “Jose” (a lightweight edge "jsonwebtoken") for authorization/authentication.',
       'Made the orders customizable by adding “params” and “option” properties to cart items making the website much more engaging and pleasurable.',
     ],
   },
@@ -116,13 +145,13 @@ export const experiences: experience[] = [
     date: 'Mar 2022 - Jun 2022 · 4 mos',
     points: [
       "Engineered the Programs' Architecture to be scalable for upcoming updates and developers.",
-      'Programmed The Whole Website According to design And all of its Pages using React Router V6 (nothing has been updated since I finished so you can check it out in my portfolio).',
+      'Programmed The Whole Website According to design And all of its Pages using React Router V6.',
       'Transformed a given design into a fully functioning website while respecting responsiveness.',
     ],
   },
 ]
 
-export const contracts: project[] = [
+export const contracts: projectT[] = [
   {
     name: 'Xphoria',
     description: `With a passworless email-only JWT authentication system, Xphoria is ensuring an easier and safer option eliminating and steering away from vurnabilities associated with
@@ -160,8 +189,10 @@ export const contracts: project[] = [
   },
   {
     name: 'Alexy',
-    description: `Alexy is an e-commerce website that offers a variety of session authentication gateways using NextAuth.js. It allows users to choose the authentication option that suits them best. 
-    Additionally, the project includes features such as notifying professionals via nodemailer for Google Meet sessions and a professional UX/UI newsletter subscription for beauty and health tips.`,
+    description: `Developed an Advanced, Cutting-edge, Modern, Ultra-fast and Secure e-commerce Website
+    Implemented a captivating 3D UI/UX that is controllable by the end user
+    implemented sessions for Quick Google Authentication through Next-Auth
+    Implemented a Checkout Gateway using Stripe, and Stripe Webhooks`,
     image: alexy,
     website_link: 'https://alexy.vercel.app',
     source_code_link: 'https://github.com/Yassine-Laaziz/Alexy',
@@ -187,7 +218,7 @@ export const contracts: project[] = [
       { img: typescript, alt: 'Typescript' },
       { img: sanity, alt: 'Sanity' },
       { img: nodejs, alt: 'Node.js' },
-      { img: nodemailer, alt: 'Nodemailer' },
+      { img: stripe, alt: 'stripe' },
       { img: tailwind, alt: 'Tailwind.css' },
       { img: headlessUI, alt: 'HeadlessUI' },
       { img: framerMotion, alt: 'Framer-Motion' },
@@ -232,13 +263,12 @@ export const contracts: project[] = [
     source_code_link: 'https://github.com/Yassine-Laaziz/IP-Tracker',
     stack: [
       { img: reactjs, alt: 'React.js' },
-      { img: next, alt: 'Next.js' },
       { img: sanity, alt: 'Sanity' },
     ],
   },
 ]
 
-export const projects: project[] = [
+export const projects: projectT[] = [
   {
     name: '3D Experiment',
     description: `3D shirt customization. Using advanced cutting-edge web development techniques and tools
@@ -262,7 +292,7 @@ export const projects: project[] = [
       },
     ],
     stack: [
-      { img: threejsWhite, alt: 'Three.js' },
+      { img: threejs, alt: 'Three.js' },
       { img: reactjs, alt: 'React.js' },
       { img: next, alt: 'Next.js' },
       { img: typescript, alt: 'Typescript' },
@@ -302,7 +332,7 @@ export const projects: project[] = [
     stack: [
       { img: reactjs, alt: 'React.js' },
       { img: next, alt: 'Next.js' },
-      { img: threejsWhite, alt: 'Three.js' },
+      { img: threejs, alt: 'Three.js' },
       { img: framerMotion, alt: 'Framer-Motion' },
       { img: vite, alt: 'Vite' },
     ],
@@ -323,19 +353,16 @@ export const achievements: achievementT[] = [
   {
     age: 12,
     achievement: 'I became a software engineer',
-    description:
-      'At the age of 12, I embarked on my software engineering journey by diving into Lua programming. Lua allowed me to develop various projects and sparked my passion for coding. It was during this time that I also began exploring the world of web development.',
-    keyPoints: [
-      'Initiated software engineering journey',
-      'Developed projects using Lua',
-      'Started exploring web development',
-    ],
+    description: `At the age of 12, I embarked on my software engineering journey by diving into Lua programming. Lua allowed me to develop various projects
+       and sparked my passion for coding. It was during this time that I also began exploring the world of web development.`,
+    keyPoints: ['Initiated software engineering journey', 'Developed projects using Lua', 'Started exploring web development'],
   },
   {
     age: 15,
     achievement: 'I became an advanced Web Developer with Cybersecurity Skills',
-    description:
-      'By the time I turned 15, I had established myself as an advanced fullstack web developer, proficient in both frontend and backend development. I specialized in creating captivating 3D user interfaces and seamless user experiences on the frontend, while also architecting robust and scalable backend systems. Additionally, I expanded my knowledge in cybersecurity, ensuring the security and integrity of web applications.',
+    description: `By the time I turned 15, I had established myself as an advanced fullstack web developer, proficient in both
+     frontend and backend development. I specialized in creating captivating 3D user interfaces and seamless user experiences on the frontend,
+      while also architecting robust and scalable backend systems. Additionally, I expanded my knowledge in cybersecurity, ensuring the security and integrity of web applications.`,
     keyPoints: [
       'Advanced fullstack web development skills',
       'Expertise in creating captivating 3D user interfaces and seamless user experiences on the frontend',
@@ -343,5 +370,16 @@ export const achievements: achievementT[] = [
       'Proficient in cutting-edge web technologies',
       'Novice-level cybersecurity knowledge to enhance web application security',
     ],
+  },
+]
+
+export const softSkills: softSkillsT[] = [
+  {
+    skill: 'CyberSecurity',
+    icon: CyberSecurity,
+  },
+  {
+    skill: '3D Modeling',
+    icon: Icon3D,
   },
 ]

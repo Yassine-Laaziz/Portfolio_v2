@@ -1,4 +1,4 @@
-export interface project {
+export interface projectT {
   name: string
   description: string
   image: string
@@ -8,7 +8,7 @@ export interface project {
   stack?: { img: string; alt: string }[]
 }
 
-export interface experience {
+export interface experienceT {
   title: string
   company_name: string
   icon: string
@@ -22,4 +22,9 @@ export interface achievementT {
   achievement: string
   description: string
   keyPoints: string[]
+}
+
+export interface softSkillsT {
+  skill: string
+  icon: string
 }
